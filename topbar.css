@@ -46,3 +46,12 @@ ul li:hover ul.dropdown {
 ul li a:hover {
     background-color: #326c2b;
 }
+
+#title {
+    font-size: 30px;
+    color: #234F1E;
+    margin-left: 2.5%;
+    width: 20%;
+    text-shadow: 2px 2px white;
+}
+
