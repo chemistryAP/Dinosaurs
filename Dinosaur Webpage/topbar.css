@@ -3,7 +3,7 @@ ul {
     margin: 0;
     list-style: none;
     background-color: #234F1E;
-    margin-left: 80%;
+    margin-left: auto;
     border-radius: 5px;
     border-style: solid;
     border-color: white;
@@ -49,9 +49,16 @@ ul li a:hover {
 
 #title {
     font-size: 30px;
-    color: #234F1E;
-    margin-left: 2.5%;
+    color: #ffffff;
+    margin-left: 25%;
     width: 20%;
-    text-shadow: 2px 2px white;
+    text-shadow: 2px 2px #326c2b;
+}
+
+#dayinfo {
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 300px;
+    width: 20%;
 }
 

@@ -1,0 +1,68 @@
+body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-image: url("../misc/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Poppins", monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    border: solid;
+    border-color: white;
+    margin-top: 5%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content {
+    border: inset 4px;
+    border-color: white;
+    border-radius: 3px;
+    margin-top: 3%;
+    height: 500px;
+    background-color: #234F1E;
+}
+
+
+#map {
+    width: 400px;
+}
+
+#dinosaur {
+    width: 750px;
+}
+
+#information {
+    width: 400px;
+}
+
+footer {
+    border: solid;
+    background-color: #234F1E;
+    color: #fff;
+    padding: 3em;
+    margin-top: auto;
+    border: solid 3px;
+    text-shadow: 0.2px 0.2px 326c2b;
+}
+
+#github {
+    margin-left: 80%;
+}
+
+#aboutbody {
+    background-color: #234F1E;
+    color: #fff;
+    text-align: center;
+    margin-top: 25%;
+    font-size: 100px;
+}
