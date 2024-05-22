@@ -1,0 +1,69 @@
+#guess1 {
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#guess2 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#guess3 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#guess4 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#guess5 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#guess6 {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+.anskey {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    border: solid 3px;
+    border-color: white;
+    font-weight: bold;
+    width: 70px;
+    height: 70px;
+    border-radius: 2px;
+}
+

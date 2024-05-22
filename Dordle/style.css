@@ -22,13 +22,45 @@ body {
 
 
 #wrapper {
-    border: solid 4px;
-    border-color: #234F1E;
+    border: inset 4px;
+    border-color: white;
     background-color: #234F1E;
     border-radius: 3px;
     margin: auto;
-    margin-top: 10px;
-    width: 900px;
+    margin-top: 15px;
+    width: 1000px;
     height: 550px;
     opacity: 0.5;
+    display: flex;
+    flex-direction: column;
 }
+
+#keypad {
+    margin: auto;
+    border-radius: 50px;
+    height: 250px;
+    width: 900px;
+    opacity: 0.8;
+}
+
+.key {
+    border: inset 10px;
+    margin-top: 5px;
+    font-weight: bold;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+
+
+}
+
+.specialkey {
+    border: inset 5px;
+    border-color: white;
+    font-weight: bold;
+    width: 90px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+
