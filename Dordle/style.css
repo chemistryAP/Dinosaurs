@@ -1,0 +1,15 @@
+body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-image: url("../misc/dordlebg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Poppins", monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
