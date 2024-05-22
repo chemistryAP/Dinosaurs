@@ -64,3 +64,10 @@ body {
 }
 
 
+.key:hover {
+    cursor: pointer;
+  }
+  
+.specialkey:hover {
+    cursor: pointer;
+}
