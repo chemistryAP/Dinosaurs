@@ -7,4 +7,3 @@ const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Frida
 const dowName = weekdays[dow];
 document.getElementById("dayinfo").textContent = dowName + " "+ day + "-" + month + "-" + year;
 
-
