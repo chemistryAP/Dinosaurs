@@ -39,6 +39,11 @@ body {
 
 #dinosaur {
     width: 750px;
+    background-image: url("../Misc/tree.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #information {
@@ -59,10 +64,11 @@ footer {
     margin-left: 80%;
 }
 
-#aboutbody {
+#Joke {
     background-color: #234F1E;
     color: #fff;
     text-align: center;
     margin-top: 25%;
     font-size: 100px;
 }
+
