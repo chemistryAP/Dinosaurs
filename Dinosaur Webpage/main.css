@@ -42,6 +42,11 @@ body {
    
 }
 
+#dinosaurMap {
+    width: 400px;
+    height: 500px;
+}
+
 #information {
     width: 400px;
 }

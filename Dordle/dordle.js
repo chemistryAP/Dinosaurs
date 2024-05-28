@@ -1,11 +1,12 @@
 var keyName;
 var currentIndex = 0;
 var guesses = 1;
+var answer = "Triceratops";
 const keysArray = [
     "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P",
     "A", "S", "D", "F", "G", "H", "J", "K", "L",
     "Z", "X", "C", "V", "B", "N", "M",
-    "ENTER", "DELETE"
+    "ENTER", "BACKSPACE"
 ];
 var guess1 = [
     document.getElementById("a1"),
@@ -85,23 +86,22 @@ var guess6 = [
     document.getElementById("f10"),
     document.getElementById("f11")
 ];
-
 var currentArr;
-
 document.body.addEventListener("keydown", assignKeyName);
 document.querySelectorAll('.key, .specialkey').forEach(button => {
     button.addEventListener('click', function() {
         assignKeyNameButton(button.textContent);
     });
 });
-
-
 function assignKeyName(event) {
     keyName = event.key.toUpperCase();
     console.log(keyName);
 }
 
 function assignKeyNameButton(buttonText) {
+    if (buttonText === "DELETE") {
+        buttonText = "BACKSPACE"
+    }
     keyName = buttonText.toUpperCase();
     console.log(keyName);
 }
@@ -111,45 +111,3 @@ function evalKey() {
 }
 
 
-function checkValidGuess() {
-
-}
-
-function checkWinner() {
-
-}
-
-function lastAttempt() {
-
-}
-
-function deleteLetter() {
-
-}
-
-function assignCurrentGuess() {
-    switch (guesses) {
-        case 1:
-            currentArr = guess1;
-            break;
-        case 2:
-            currentArr = guess2;
-            break;
-        case 3:
-            currentArr = guess3;
-            break;
-        case 4:
-            currentArr = guess4;
-            break;
-        case 5:
-            currentArr = guess5;
-            break;
-        case 6:
-            currentArr = guess6;
-            break;
-    }
-}
-
-if (keysArray.includes(keyName)) {
-    
-}
