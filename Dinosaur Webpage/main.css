@@ -39,11 +39,7 @@ body {
 
 #dinosaur {
     width: 750px;
-    background-image: url("../Misc/tree.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+   
 }
 
 #information {

@@ -1,70 +1,155 @@
-import { aArray, bArray, cArray, dArray, eArray, fArray } from "../Dordle/var"; 
-var allArrays = [aArray, bArray, cArray, dArray, eArray, fArray];
-document.addEventListener("keydown", handleKeyInput);
+var keyName;
+var currentIndex = 0;
+var guesses = 1;
+const keysArray = [
+    "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P",
+    "A", "S", "D", "F", "G", "H", "J", "K", "L",
+    "Z", "X", "C", "V", "B", "N", "M",
+    "ENTER", "DELETE"
+];
+var guess1 = [
+    document.getElementById("a1"),
+    document.getElementById("a2"),
+    document.getElementById("a3"),
+    document.getElementById("a4"),
+    document.getElementById("a5"),
+    document.getElementById("a6"),
+    document.getElementById("a7"),
+    document.getElementById("a8"),
+    document.getElementById("a9"),
+    document.getElementById("a10"),
+    document.getElementById("a11")
+];
+var guess2 = [
+    document.getElementById("b1"),
+    document.getElementById("b2"),
+    document.getElementById("b3"),
+    document.getElementById("b4"),
+    document.getElementById("b5"),
+    document.getElementById("b6"),
+    document.getElementById("b7"),
+    document.getElementById("b8"),
+    document.getElementById("b9"),
+    document.getElementById("b10"),
+    document.getElementById("b11")
+];
+var guess3 = [
+    document.getElementById("c1"),
+    document.getElementById("c2"),
+    document.getElementById("c3"),
+    document.getElementById("c4"),
+    document.getElementById("c5"),
+    document.getElementById("c6"),
+    document.getElementById("c7"),
+    document.getElementById("c8"),
+    document.getElementById("c9"),
+    document.getElementById("c10"),
+    document.getElementById("c11")
+];
+var guess4 = [
+    document.getElementById("d1"),
+    document.getElementById("d2"),
+    document.getElementById("d3"),
+    document.getElementById("d4"),
+    document.getElementById("d5"),
+    document.getElementById("d6"),
+    document.getElementById("d7"),
+    document.getElementById("d8"),
+    document.getElementById("d9"),
+    document.getElementById("d10"),
+    document.getElementById("d11")
+];
+var guess5 = [
+    document.getElementById("e1"),
+    document.getElementById("e2"),
+    document.getElementById("e3"),
+    document.getElementById("e4"),
+    document.getElementById("e5"),
+    document.getElementById("e6"),
+    document.getElementById("e7"),
+    document.getElementById("e8"),
+    document.getElementById("e9"),
+    document.getElementById("e10"),
+    document.getElementById("e11")
+];
+var guess6 = [
+    document.getElementById("f1"),
+    document.getElementById("f2"),
+    document.getElementById("f3"),
+    document.getElementById("f4"),
+    document.getElementById("f5"),
+    document.getElementById("f6"),
+    document.getElementById("f7"),
+    document.getElementById("f8"),
+    document.getElementById("f9"),
+    document.getElementById("f10"),
+    document.getElementById("f11")
+];
 
-var allArrays = [aArray, bArray, cArray, dArray, eArray, fArray];
-var index = 0;
-var currentArray = 0;
+var currentArr;
+
+document.body.addEventListener("keydown", assignKeyName);
+document.querySelectorAll('.key, .specialkey').forEach(button => {
+    button.addEventListener('click', function() {
+        assignKeyNameButton(button.textContent);
+    });
+});
 
 
-function handleKeyInput(event) {
-    arr = getArray();
-    key = event.getKey;
-    console.log(key);
-    arr[index].textContent = key.toUpperCase();
-    index++;
+function assignKeyName(event) {
+    keyName = event.key.toUpperCase();
+    console.log(keyName);
 }
 
-function handleKeyPadInput(key) {
-
+function assignKeyNameButton(buttonText) {
+    keyName = buttonText.toUpperCase();
+    console.log(keyName);
 }
 
-function nextGuess() {
-
-}
-
-function endState() {
+function evalKey() {
 
 }
 
 
-function getArray() {
-    return allArrays[currentArray];
+function checkValidGuess() {
+
 }
 
+function checkWinner() {
 
+}
 
+function lastAttempt() {
 
+}
 
+function deleteLetter() {
 
+}
 
+function assignCurrentGuess() {
+    switch (guesses) {
+        case 1:
+            currentArr = guess1;
+            break;
+        case 2:
+            currentArr = guess2;
+            break;
+        case 3:
+            currentArr = guess3;
+            break;
+        case 4:
+            currentArr = guess4;
+            break;
+        case 5:
+            currentArr = guess5;
+            break;
+        case 6:
+            currentArr = guess6;
+            break;
+    }
+}
 
-
-var Q = document.getElementById("Q");
-var W = document.getElementById("W");
-var E = document.getElementById("E");
-var R = document.getElementById("R");
-var T = document.getElementById("T");
-var Y = document.getElementById("Y");
-var U = document.getElementById("U");
-var I = document.getElementById("I");
-var O = document.getElementById("O");
-var P = document.getElementById("P");
-var A = document.getElementById("A");
-var S = document.getElementById("S");
-var D = document.getElementById("D");
-var F = document.getElementById("F");
-var G = document.getElementById("G");
-var H = document.getElementById("H");
-var J = document.getElementById("J");
-var K = document.getElementById("K");
-var L = document.getElementById("L");
-var ENTER = document.getElementById("ENTER");
-var Z = document.getElementById("Z");
-var X = document.getElementById("X");
-var C = document.getElementById("C");
-var V = document.getElementById("V");
-var B = document.getElementById("B");
-var N = document.getElementById("N");
-var M = document.getElementById("M");
-var DELETE = document.getElementById("DELETE");v
+if (keysArray.includes(keyName)) {
+    
+}
