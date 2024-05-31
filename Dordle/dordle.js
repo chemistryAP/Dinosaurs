@@ -105,6 +105,7 @@ var currentGuess = [
 ];
 
 var currentArr;
+const modal = document.getElementById("modal");
 
 document.body.addEventListener("keydown", assignKeyName);
 document.querySelectorAll('.key, .specialkey').forEach(button => {
@@ -168,6 +169,7 @@ function checkValidGuess() {
    }
    if (validWords.includes(playerGuess)) {
        isWinner();
+       modal.classList.add("open");
    }
 }
 
@@ -193,4 +195,5 @@ function isWinner() {
         guesses++;
     }
 }
+
 

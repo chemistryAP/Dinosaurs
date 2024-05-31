@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="../Misc/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="anskey.css">
+    <link rel="stylesheet" href="popup.css">
     <title>Dordle</title>
 </head>
 
@@ -127,7 +128,16 @@
         <button class="key" id="N">N</button>
         <button class="key" id="M">M</button>
         <button class="specialkey" id="DELETE">DELETE</button>
-
+    </div>
+    <div class = "modal" id = "modal">
+        <div class = "modal-inner">
+          <h1 id = "winningstate">
+            You Win!
+          </h1>
+          <p>
+            <a href = "../Dinosaur Webpage/webpage.html" id = "maw">More about this word</a>
+          </p>
+        </div>
     </div>
     <script src="dordle.js"></script>
     <script src="../Misc/dayinfo.js"></script>
