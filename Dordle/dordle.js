@@ -6,7 +6,7 @@ validWords = [
 var keyName;
 var currentIndex = 0;
 var guesses = 1;
-var answer = "TRICERATOPS"; 
+var answer = "Brachiosaur".toUpperCase(); 
 var play = true;
 
 const keysArray = [
@@ -131,10 +131,6 @@ function assignKeyNameButton(buttonText) {
         console.log(keyName);
         addLetter(keyName);
     }
-}
-
-function evalKey() {
-
 }
 
 function addLetter(keyName) {
