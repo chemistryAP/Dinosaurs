@@ -73,3 +73,9 @@ footer {
     font-size: 100px;
 }
 
+.last {
+    padding: 10px 10px;
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+}

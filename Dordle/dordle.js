@@ -6,7 +6,7 @@ validWords = [
 var keyName;
 var currentIndex = 0;
 var guesses = 1;
-var answer = "STEGOSAURUS"; 
+var answer = "TRICERATOPS"; 
 var play = true;
 
 const keysArray = [
@@ -191,6 +191,8 @@ function isWinner() {
     if (correct == answer.length) {
         play = false;
         modal.classList.add("open");
+        let x = document.getElementById("winningstate");
+        x.style.color = "#74b72e"
     } else { 
         guesses++;
         if (guesses == 7) {
@@ -199,6 +201,7 @@ function isWinner() {
             let x = document.getElementById("winningstate");
             x.textContent = "You lose, the word was " + answer + ", click on the link to learn more";
             x.style.fontSize = "35px";
+            x.style.color = "#c61a09"
         }
     }
 }
