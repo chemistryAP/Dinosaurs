@@ -6,7 +6,7 @@ validWords = [
 var keyName;
 var currentIndex = 0;
 var guesses = 1;
-var answer = "TRICERATOPS"; 
+var answer = "STEGOSAURUS"; 
 var play = true;
 
 const keysArray = [
@@ -169,7 +169,6 @@ function checkValidGuess() {
    }
    if (validWords.includes(playerGuess)) {
        isWinner();
-       modal.classList.add("open");
    }
 }
 
@@ -191,8 +190,16 @@ function isWinner() {
     }
     if (correct == answer.length) {
         play = false;
+        modal.classList.add("open");
     } else { 
         guesses++;
+        if (guesses == 7) {
+            play = false;
+            modal.classList.add("open");
+            let x = document.getElementById("winningstate");
+            x.textContent = "You lose, the word was " + answer + ", click on the link to learn more";
+            x.style.fontSize = "35px";
+        }
     }
 }
 
