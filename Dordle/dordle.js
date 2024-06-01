@@ -6,7 +6,7 @@ validWords = [
 var keyName;
 var currentIndex = 0;
 var guesses = 1;
-var answer = "Brachiosaur".toUpperCase(); 
+var answer = "TRICERATOPS".toUpperCase(); 
 var play = true;
 
 const keysArray = [
